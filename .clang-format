@@ -1,0 +1,57 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+# Initializers are one field per line and still fit in a normal column
+# limit, which would pack them onto one line. No limit keeps that layout.
+ColumnLimit: 0
+
+PointerAlignment: Right
+DerivePointerAlignment: false
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: false
+  AfterControlStatement: Never
+  AfterStruct: false
+  AfterEnum: false
+  AfterClass: false
+  AfterNamespace: false
+  AfterUnion: false
+  BeforeElse: false
+  BeforeCatch: false
+  IndentBraces: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: Never
+AllowShortEnumsOnASingleLine: false
+
+BinPackArguments: false
+BinPackParameters: BinPack
+Cpp11BracedListStyle: false
+
+SpaceBeforeParens: ControlStatements
+SpaceBeforeAssignmentOperators: true
+SpacesInParentheses: false
+SpaceAfterCStyleCast: false
+
+AlignConsecutiveAssignments:
+  Enabled: false
+AlignConsecutiveDeclarations:
+  Enabled: false
+
+SortIncludes:
+  Enabled: false
+IncludeBlocks: Preserve
+
+InsertNewlineAtEOF: true
+MaxEmptyLinesToKeep: 1
+LineEnding: LF
